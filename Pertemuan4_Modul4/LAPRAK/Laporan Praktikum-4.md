@@ -1,18 +1,23 @@
-# <h1 align="center">Laporan Praktikum Modul 3 - Abstract Data Type (ADT)</h1>
+# <h1 align="center">Laporan Praktikum Modul 4 - Singly Linked List (Bagian Pertama)</h1>
 <p align="center">M-Davi-Ilyas-Renaldo - 103112400062</p>
 
 ## Dasar Teori
-## 1. Abstract Data Type (ADT)
-Abstract Data Type (ADT) merupakan konsep penting dalam pemrograman yang memisahkan antara definisi logis suatu tipe data dengan implementasi fisiknya. ADT berfokus pada apa yang dilakukan suatu tipe data, bukan bagaimana cara melakukannya. Dalam bahasa C++, ADT dapat diimplementasikan menggunakan struct atau class, di mana keduanya berisi data dan fungsi untuk memproses data tersebut Penerapan ADT membantu dalam abstraksi data, enkapsulasi, dan modularitas, sehingga program menjadi lebih efisien dan mudah dikelola Pada praktikum ini, konsep ADT diterapkan melalui pembuatan program yang menggunakan struct mahasiswa dan pelajaran sebagai representasi data abstrak, di mana setiap operasi dilakukan melalui fungsi terpisah seperti inputMhs(), rata2(), create_pelajaran(), dan tampil_pelajaran().
+Singly Linked List merupakan salah satu bentuk struktur data dinamis yang tersusun dari elemen-elemen yang disebut node, di mana setiap node berisi data dan pointer yang menunjuk ke node berikutnya. Berbeda dengan array yang memiliki ukuran tetap, linked list bersifat dinamis dan dapat bertambah atau berkurang selama program berjalan, sehingga memungkinkan penggunaan memori yang lebih efisien.
 
-## 2. Struct dalam C++
-struct atau struktur digunakan untuk mengelompokkan beberapa variabel dengan tipe data berbeda ke dalam satu kesatuan. Dengan menggunakan struct, data yang memiliki hubungan logis dapat disatukan menjadi satu tipe data baru. Dalam praktikum ini, struct mahasiswa menyimpan data seperti nama, NIM, dan nilai, sedangkan struct pelajaran menyimpan nama dan kode mata pelajaran. Struct ini menjadi dasar dari penerapan Abstract Data Type, karena membungkus data terkait dalam satu entitas terpisah. Selain itu, penggunaan struct juga membantu dalam membangun program yang lebih terstruktur dan terorganisir, terutama ketika dikombinasikan dengan fungsi untuk mengelola data tersebut.
+Struktur dasar singly linked list biasanya terdiri atas dua komponen utama:
+1.Data field, yaitu bagian yang menyimpan nilai atau informasi.
+2. Pointer field (next), yaitu bagian yang menunjuk ke node berikutnya dalam list.
 
-## 3. Fungsi dan Modularitas Program
-Fungsi adalah blok kode yang digunakan untuk menjalankan tugas tertentu dan dapat dipanggil berulang kali dari bagian lain program. Penggunaan fungsi menjadikan program bersifat modular, artinya dapat dibagi menjadi bagian-bagian kecil yang memiliki tanggung jawab spesifik. Dalam laporan ini, fungsi digunakan untuk melakukan berbagai operasi seperti: Menginput dan menghitung rata-rata nilai mahasiswa, Menghitung nilai akhir mahasiswa dari bobot UTS, UAS, dan tugas, Membuat dan menampilkan data mata pelajaran, Menukar nilai pada matriks menggunakan fungsi tukarArray dan tukarPointer.
+Operasi dasar yang umum dilakukan pada singly linked list antara lain:
+1.insertFirst, insertLast, dan insertAfter untuk menambahkan node;
+2.deleteFirst, deleteLast, dan deleteAfter untuk menghapus node;
+3.printList untuk menampilkan isi list;
+4.nbList untuk menghitung jumlah node;
+5.deleteList untuk menghapus seluruh isi list.
 
-## 4. Array dan Pointer
-Array merupakan struktur data yang menyimpan sekumpulan elemen dengan tipe data yang sama dalam satu variabel. Dalam laporan ini digunakan array dua dimensi (3x3) untuk menyimpan data dalam bentuk matriks. Pointer, di sisi lain, merupakan variabel yang menyimpan alamat memori dari variabel lain. Dengan pointer, program dapat memanipulasi nilai secara langsung di memori, sehingga operasi seperti pertukaran data dapat dilakukan lebih efisien. Pada praktikum ini, pointer diterapkan dalam fungsi tukarPointer untuk menukar nilai dua variabel secara langsung melalui alamat memorinya. Hal ini memperlihatkan bagaimana pointer berperan penting dalam efisiensi dan fleksibilitas pengelolaan memori di C++.
+Dalam implementasinya, pointer head digunakan untuk menunjuk node pertama dalam list. Jika head = NULL, maka list dianggap kosong (isEmpty). Penggunaan pointer global dapat memudahkan pengelolaan list pada program berskala kecil, namun pada sistem besar, struktur data ini biasanya dikelola melalui kelas atau objek.
+
+Penerapan linked list banyak dijumpai dalam berbagai bidang komputasi, seperti manajemen memori, struktur antrian (queue), stack, hingga graf dan tree. Pemahaman konsep ini menjadi dasar penting untuk memahami struktur data yang lebih kompleks serta optimasi algoritma pada pemrograman.
 
 ## Guided 
 
@@ -656,6 +661,7 @@ Program C++ ini menerapkan singly linked list sederhana untuk menyimpan data ber
 Dari praktikum ini, saya memahami bahwa singly linked list merupakan salah satu struktur data dinamis yang memungkinkan penyimpanan dan pengelolaan data secara efisien melalui node yang saling terhubung menggunakan pointer. Melalui implementasi bertahap dalam beberapa program, dipelajari berbagai operasi dasar seperti penyisipan (insert), penghapusan (delete), penghitungan jumlah node (nbList), dan penghapusan seluruh list (deleteList). Penggunaan file terpisah seperti header, implementasi fungsi, dan program utama membantu menciptakan kode yang lebih terstruktur dan mudah dikelola. Secara keseluruhan, konsep ini memberikan dasar penting dalam memahami cara kerja struktur data dinamis serta manajemen memori pada bahasa C++.
 
 ## Referensi
-1. Malik, D. S. (2018). C++ Programming: From Problem Analysis to Program Design (8th Edition). Cengage Learning.
-2. Rahman, M. A. (2021). “Analisis Konsep Abstract Data Type (ADT) dalam Pemrograman Berorientasi Objek.” Jurnal Teknologi Informasi dan Ilmu Komputer (JTIIK), 8(3). https://jtiik.ub.ac.id/
-3. Siregar, R. (2022). “Penerapan Modularitas dalam Pemrograman C++.” Jurnal Ilmiah Teknologi dan Rekayasa, 5(2). https://ejournal.itn.ac.id/
+1. Goodrich, M. T., Tamassia, R., & Goldwasser, M. H. (2014). Data Structures and Algorithms in C++ (2nd ed.). Wiley.
+2. Malik, D. S. (2018). C++ Programming: Program Design Including Data Structures (8th ed.). Cengage Learning.
+3. Harahap, H., & Lubis, M. (2020). “Implementasi Struktur Data Linked List pada Bahasa Pemrograman C++ untuk Pengelolaan Data Dinamis.” Jurnal Teknologi Informasi dan Komputer (JTIK), 6(2), 45–52.
+4. Rahman, A., & Sari, D. P. (2021). “Analisis dan Implementasi Struktur Data Linked List dalam Pengembangan Sistem Informasi Akademik.” Jurnal Ilmiah Informatika, 9(1), 12–18.
