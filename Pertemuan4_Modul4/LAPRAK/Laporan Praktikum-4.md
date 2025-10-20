@@ -5,15 +5,15 @@
 Singly Linked List merupakan salah satu bentuk struktur data dinamis yang tersusun dari elemen-elemen yang disebut node, di mana setiap node berisi data dan pointer yang menunjuk ke node berikutnya. Berbeda dengan array yang memiliki ukuran tetap, linked list bersifat dinamis dan dapat bertambah atau berkurang selama program berjalan, sehingga memungkinkan penggunaan memori yang lebih efisien.
 
 Struktur dasar singly linked list biasanya terdiri atas dua komponen utama:
-1.Data field, yaitu bagian yang menyimpan nilai atau informasi.
+1. Data field, yaitu bagian yang menyimpan nilai atau informasi.
 2. Pointer field (next), yaitu bagian yang menunjuk ke node berikutnya dalam list.
 
 Operasi dasar yang umum dilakukan pada singly linked list antara lain:
-1.insertFirst, insertLast, dan insertAfter untuk menambahkan node;
-2.deleteFirst, deleteLast, dan deleteAfter untuk menghapus node;
-3.printList untuk menampilkan isi list;
-4.nbList untuk menghitung jumlah node;
-5.deleteList untuk menghapus seluruh isi list.
+1. insertFirst, insertLast, dan insertAfter untuk menambahkan node.
+2. deleteFirst, deleteLast, dan deleteAfter untuk menghapus node.
+3. printList untuk menampilkan isi list.
+4. nbList untuk menghitung jumlah node.
+5. deleteList untuk menghapus seluruh isi list.
 
 Dalam implementasinya, pointer head digunakan untuk menunjuk node pertama dalam list. Jika head = NULL, maka list dianggap kosong (isEmpty). Penggunaan pointer global dapat memudahkan pengelolaan list pada program berskala kecil, namun pada sistem besar, struktur data ini biasanya dikelola melalui kelas atau objek.
 
