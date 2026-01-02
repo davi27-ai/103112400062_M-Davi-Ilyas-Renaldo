@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 14 - Multi Linked List </h1>
+# <h1 align="center">Laporan Praktikum Modul 14 - Graph </h1>
 <p align="center">M-Davi-Ilyas-Renaldo - 103112400062</p>
 
 ## Dasar Teori
@@ -364,4 +364,5 @@ Praktikum ini membuktikan efektivitas struktur Graph dalam merepresentasikan rel
 1. Sjukani, Moh. (2014). Struktur Data (Algoritma & Struktur Data 2) dengan C, C++. Jakarta: Mitra Wacana Media.
 2. Sutedjo, Budi & Nur Wijaya, Michael. (2010). Struktur Data dan Algoritma dengan C++. Yogyakarta: Andi Offset.
 3. Munir, Rinaldi. (2010). Matematika Diskrit. Bandung: Informatika. (Menyediakan landasan matematis graph yang mendalam).
+
 4. Siahaan, Vivian & Sianipar, R.H. (2020). Panduan Praktis Pemrograman C++ dan Struktur Data. Jakarta: Balige Publishing.
